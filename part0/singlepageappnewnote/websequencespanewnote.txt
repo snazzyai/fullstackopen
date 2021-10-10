@@ -1,0 +1,26 @@
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: HTML-code
+
+
+note over browser:
+browser starts executing js-code
+in html file 
+end note
+
+note over browser:
+user inputs data in the textfield
+and clicks on submit 
+end note
+
+
+
+note over browser:
+The page prevents default submission on clicking submit
+The server does not redirect to fetch new data but just reloads and
+shows the updated data using javascript
+end note
+
+browser->server: HTTP POST https://https://studies.cs.helsinki.fi/spa/new_note_spa
+note over browser:
+The notes data as JSON is sent via POST request 
+end note
